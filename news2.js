@@ -17,8 +17,10 @@ $('label:contains("Summary")').parent("td").next().children("textarea").val(news
 
 //$('textarea.reTextArea').show(0).val(NewsHtml1);
 
-$('.reContentCell').children("iframe").hide(0)
-$('.reContentCell').append('<textarea class="reTextArea" style="height: 173px;"></textarea>');
+//$('.reContentCell').children("iframe").hide(0)
+//$('.reContentCell').append('<textarea class="reTextArea" style="height: 173px;"></textarea>');
+
+$('table .reMode_html').parent().trigger("click");
 $('.reContentCell textarea.reTextArea').val(NewsHtml1);
 
 
