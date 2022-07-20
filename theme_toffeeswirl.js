@@ -1,0 +1,3 @@
+Layout = '<?xml version="1.0" encoding="ISO-8859-1"?><div id="theme" class="homepage"><div id="menubar"><div class="inside-padding"><div class="row"><a href="#mMenuCMS" id="mobile-bar" title="Mobile Menu"><span class="fa fa-bars"></span>Menu</a><div class="centerWrapper"><div class="centerMenu"><a href="#mMenuCMS" id="mobile-bar" title="Mobile Menu"><span></span>MENU</a><pageset style="Telerik" class="telerik_main_menu" type="text" maxDepth="7" checkpermission="true" hideHome="false" highlightSelectedItem="true" mMenu="true" mMenuID="mMenuCMS" /><div class="clear"></div></div></div></div></div></div><div id="page"><page /></div></div>';
+
+$('.tbl_row_text:contains("Portal Layout")').next().children("textarea").val(Layout);
