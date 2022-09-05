@@ -17,7 +17,7 @@
         $("#qlogin").remove();
         $("#login").after('<p><a class="bookmarklet" id="qlogin" onclick="javascript:return false;">QLogin</a></p>');
         $("#qlogin").attr("href",
-          "javascript:(function(){var%20qlogin=document.createElement('SCRIPT');qlogin.type='text/javascript';qlogin.src='https://nathaliamar.github.io/valoree/qlogin.js';document.getElementsByTagName('head')[0].appendChild(qlogin);qvars=document.createElement('SCRIPT');qvars.type='text/javascript';qvars_txt = document.createTextNode('var%20u='"+ $('#u').val()+"';var%20p='"+$("#p").val()+"');qvars.appendChild(qvars_txt);document.getElementsByTagName('head')[0].appendChild(qvars);})();");
+          "javascript:(function(){var%20qlogin=document.createElement('SCRIPT');qlogin.type='text/javascript';qlogin.src='https://nathaliamar.github.io/valoree/qlogin.js';document.getElementsByTagName('head')[0].appendChild(qlogin);qvars=document.createElement('SCRIPT');qvars.type='text/javascript';qvars_txt = document.createTextNode(&quot;u='"+ $('#u').val()+"';p='"+$("#p").val()+"&quot;);qvars.appendChild(qvars_txt);document.getElementsByTagName('head')[0].appendChild(qvars);})();");
       });
       
     })
