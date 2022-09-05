@@ -15,7 +15,7 @@
         e.preventDefault();
         href = "javascript:(function(){var%20qlogin=document.createElement('SCRIPT');qlogin.type='text/javascript';qlogin.src='https://nathaliamar.github.io/valoree/qlogin.js';document.getElementsByTagName('head')[0].appendChild(qlogin);})();"
         $("#login").next("a.bookmarklet").remove();
-        $("#login").after('<p><a class="bookmarklet" onclick="javascript:return false;">Login</a></p>');
+        $("#login").after('<p><a class="bookmarklet" onclick="javascript:return false;">QLogin</a></p>');
         $("#login").next("a.bookmarklet").attr("href", "javascript:(function(){var%20u='"+$("#u").val()+"';var%20p='"+$("#p").val()+"';var%20qlogin=document.createElement('SCRIPT');qlogin.type='text/javascript';qlogin.src='https://nathaliamar.github.io/valoree/qlogin.js';document.getElementsByTagName('head')[0].appendChild(qlogin);})();");
       });
       
