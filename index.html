@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    jQuery(document).ready(function(){
+      $("#login").on("submit", function(e){
+        e.preventDefault();
+        $("a.bookmarklet").remove();
+        $("#login").next('<a class="bookmarklet" onclick="javascript:return false;">Login</a>');
+      });
+      
+    })
+  </script>
 	<!-- <script src="index.js"></script> -->
   <style>
     .bookmarklet {
@@ -43,10 +54,10 @@
   </p>
 
   <p>
-    <form>
-      <input name="field1" type="text" />
-      <input name="field2" type="text" />
-      <input name="generate" type="button">
+    <form id="login">
+      <input id="u" name="u" type="text" />
+      <input id="p" name="p" type="text" />
+      <button id="g" name="g" type="button">Generate</button>
     </form>
   </p>
 
