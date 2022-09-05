@@ -13,8 +13,8 @@
     jQuery(document).ready(function(){
       $("#login").on("submit", function(e){
         e.preventDefault();
-        $("a.bookmarklet").remove();
-        $("#login").next('<a class="bookmarklet" onclick="javascript:return false;">Login</a>');
+        $("#login").next("a.bookmarklet").remove();
+        $("#login").after('<p><a class="bookmarklet" onclick="javascript:return false;">Login</a></p>');
       });
       
     })
