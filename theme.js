@@ -18,7 +18,8 @@ function get_server(){
 }
 function get_theme(){
 	if ( $('#pageProperties_Theme_ddl').length > 0 ) {
-	    $('.ui-dialog,.ui-widget-overlay').css("display", "none");
+	    //$('.ui-dialog,.ui-widget-overlay').css("display", "none");
+	   $('#pageProperties_Close').trigger('click')
 		theme = $('#pageProperties_Theme_ddl').val();
 		console.log("theme",theme);
 		if ( theme != 0 && theme != null ){
