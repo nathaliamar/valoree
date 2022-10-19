@@ -32,8 +32,8 @@ function get_theme(){
 function redirect(server,theme){
 	origin = window.location.origin;
 	themeURL = origin + '/administrate/portal/PortalThemeAe.aspx?serverID=' + server + '&themeId=' + theme + '&pageIndex=0';
-	//location.href = themeURL;
-	var win = window.open( themeURL );
+	window.location = themeURL;
+	//var win = window.open( themeURL );
 	if (win) {
 	    //Browser has allowed it to be opened
 	    //win.focus();
